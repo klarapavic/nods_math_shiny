@@ -1,12 +1,7 @@
-Got it. Here’s a `README.md` draft that emphasizes the **mathematics and theory of DFS** first, then briefly documents the technical side of your Shiny app.
-
----
 
 # Interactive Depth-First Search (DFS) in R
 
 This project provides an **interactive visualization of the Depth-First Search (DFS) algorithm** using R and Shiny. It is designed both as a teaching tool for graph theory and as a demonstration of algorithmic simulation.
-
----
 
 ## Mathematical Background
 
@@ -37,8 +32,6 @@ This structure underlies proofs of correctness and applications of DFS in:
 * **Detecting cycles** in directed graphs,
 * **Strongly connected components** (via Kosaraju/Tarjan algorithms).
 
----
-
 ## The Shiny App
 
 This app simulates the above mathematics interactively:
@@ -63,15 +56,11 @@ This app simulates the above mathematics interactively:
 * **Discovery/finish times**,
 * **Graph plot** (visited nodes in light blue, others in gray).
 
----
-
 ## Requirements
 
 ```r
 install.packages(c("shiny", "igraph"))
 ```
-
----
 
 ## Running the App
 
@@ -84,14 +73,7 @@ shinyApp(ui = ui, server = server)
 
 The app will open in your browser and allow you to interactively explore DFS.
 
----
-
 ## Notes
 
 * This implementation is primarily for **pedagogical purposes**: it makes the stack mechanism and discovery/finish times visible step by step.
 * The code can be adapted for larger graphs or to illustrate related algorithms (BFS, topological sorting, SCC decomposition).
-
----
-
-Would you like me to also add a **formal worked-out example** (say, running DFS on your A–F graph with explicit $d(u), f(u)$ times) so the README doubles as both a tutorial and documentation?
-
